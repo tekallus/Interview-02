@@ -1,0 +1,31 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.robot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.robot-list img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.robot-list img:hover {
+  opacity: 0.7;
+}
