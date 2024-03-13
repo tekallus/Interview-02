@@ -5,6 +5,23 @@ function App() {
   // Ana bileşen, sadece RobotList bileşenini render eder.
   return <RobotList />;
 }
+// KODU YAZMAYA BASLAMADAN ONCE
+//interview2.png e bakilinca bii input ve buton dan olusan basit bir form var.
+// <div className="container"> altinda bunlarin HTML olarak yazalim.
+
+//soru-1)Bir text input alanı içeren ve altına resimlerin listesini içeren fonksiyonel bir bileşen yazın. 
+//Başlangıçta, liste boş olmalıdır. 
+//Kullanıcı bir string girişi gönderdiğinde, Fonksiyon o metin ile mevcut resim listesine karşılık gelen robot resmini eklemelidir.
+//oncelikle useState hook'u ile robotList ve input state'leri tanımlanır.
+//handleAddRobot fonksiyonu:
+//Herhangibir robot ismi girilmezse  if (input.trim() === "")
+//Girilen robot isminin listede olup olmadığını kontrol etmesi icin if (robotList.find((robot) => robot.name === input))
+//Eger robot listede yoksa, yeni bir robot nesnesi oluşturur  const newRobotve={} listeye ekleyelim setRobotList([...robotList, newRobot]);
+//Girilen metni temizlemeyi unutmayalim : setInput("")
+
+//soru-2)Kullanıcı bir robot resmine tıkladığında, resim listeden kaldırılmalıdır. 
+//const filteredList = robotList.filter((robot) => robot.name !== robotName);
+
 
 const RobotList = () => {
   // Robot listesini ve girilen metni tutmak için state'ler tanımlanır.
